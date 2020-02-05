@@ -25,7 +25,59 @@
 
   <main class="conteiner">
     <h1>Магазин готовых шаблонов</h1>
-    <!-- Form -->
+    
+    <section class="sort-panel">
+      <h2 class="visually-hidden">Сортировка проектов</h2>
+      <div class="sort-panel__slider">
+        <p>Стоимость:</p>
+      </div>
+      <form class="sort-panel__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input id="sort-panel__input-adaptive" type="radio" name="grid" value="adaptive" checked>
+              <lable for="sort-panel__input-adaptive">Адаптивная</lable>
+            </li>
+            <li>
+              <input id="sort-panel__input-fixed" type="radio" name="grid" value="fixed">
+              <lable for="sort-panel__input-fixed">Фиксированная</lable>
+            </li>
+            <li>
+              <input id="sort-panel__input-rubber" type="radio" name="grid" value="rubber">
+              <lable for="sort-panel__input-rubber">Резиновая</lable>
+            </li>
+          </ul>  
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li>
+              <input id="sort-panel__input-slider" type="checkbox" name="slider" checked>
+              <lable for="sort-panel__input-slider">Слайдер</lable>
+            </li>
+            <li>
+              <input id="sort-panel__input-advantages" type="checkbox" name="advantages">
+              <lable for="sort-panel__input-advantages">Блок преимуществ</lable>
+            </li>
+            <li>
+              <input id="sort-panel__input-news" type="checkbox" name="news" checked>
+              <lable for="sort-panel__input-news">Новости</lable>
+            </li>
+            <li>
+              <input id="sort-panel__input-gallery" type="checkbox" name="gallery">
+              <lable for="sort-panel__input-gallery">Галерея</lable>
+            </li>
+            <li>
+              <input id="sort-panel__input-cart" type="checkbox" name="cart">
+              <lable for="sort-panel__input-cart">Корзина</lable>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="sort__panel-submit" type="submit">Показать</button>
+      </form>
+    </section>
+
     <section class="sample">
       <h2 class="visually-hidden">Образцы проектов</h2>
       <div class="sample__sort-panel">
