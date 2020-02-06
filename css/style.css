@@ -1,0 +1,131 @@
+/* ---------------
+			ШРИФТЫ
+ ---------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #283136;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.navigation-panel a,
+.slider__item a,
+.order__item a,
+.address input,
+.popup__form-submit,
+.sort-panel__submit {
+	font-weight: 500;
+	text-transform: uppercase;	
+	color: #000000;
+}
+
+.slider__item p:first-child,
+.catalog-title {
+	font-size: 55px;
+	font-weight: 500;
+	line-height: 1;
+	color: #000000;
+	margin: 0;
+}
+
+.order__item h3,
+.popup__form-item label {
+	font-size: 16px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.order__item h3 {
+	text-transform: uppercase;
+}
+
+.offer__item p:first-child,
+.popup h3 {
+	font-size: 45px;
+	font-weight: 500;
+	line-height: 1;
+	color: #000000;
+}
+
+.offer__item p:nth-child(3),
+caption {
+  font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+table tr:first-child {
+	font-size: 45px;
+	font-weight: 700;
+	color: #000000;
+}
+
+table tr:nth-child(2) {
+	line-height: 1.13;
+}
+
+.address span:first-child,
+.sort-panel__slider p,
+.sort-panel__form legend,
+.sample__priority-panel span {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.social__text b {
+	font-size: 36px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.sort-panel__submit {
+	color: #000000;
+}
+
+.sample__priority-panel ul li:first-child span {
+	color: #000000;
+}
+
+.sample__priority-panel ul span {
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sample__navigation-panel {
+	font-size: 16px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.popup__form-item input::placeholder {
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(68, 68, 68, 0.5);
+}
+

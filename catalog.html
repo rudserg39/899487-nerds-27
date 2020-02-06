@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
 
@@ -23,8 +26,8 @@
     </nav>
   </header>
 
-  <main class="conteiner">
-    <h1>Магазин готовых шаблонов</h1>
+  <main class="container">
+    <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     
     <section class="sort-panel">
       <h2 class="visually-hidden">Сортировка проектов</h2>
@@ -74,13 +77,13 @@
             </li>
           </ul>
         </fieldset>
-        <button class="sort__panel-submit" type="submit">Показать</button>
+        <button class="sort-panel__submit" type="submit">Показать</button>
       </form>
     </section>
 
     <section class="sample">
       <h2 class="visually-hidden">Образцы проектов</h2>
-      <div class="sample__sort-panel">
+      <div class="sample__priority-panel">
         <span>Сортировать:</span>
         <ul>
           <li><span>По цене</span></li>
@@ -110,9 +113,10 @@
       <img src="img/map-marker.png" width="231" height="190" alt="Маркер местоположения">
       <div class="address">
         <p>
-          Nёrds design studio<br>
-          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-          тел. +7 (812) 275-75-75
+          <span>Nёrds design studio</span><br>
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+          <span>тел. +7 (812) 275-75-75</span>
         </p>
         <input type="button" value="Напишите нам">   
       </div>
@@ -134,5 +138,26 @@
       </div>
     </div>
   </footer>
+
+  <div class="popup">
+    <h3>Напишите нам</h3>
+    <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+        <p class="popup__form-item">
+          <label for="popup__form-input-name">Ваше имя:</label>
+          <input id="popup__form-input-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="popup__form-item">
+          <label for="popup__form-input-email">Ваш e-mail:</label>
+          <input id="popup__form-input-email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p class="popup__form-item">
+          <label for="popup__form-input-text">Такст письма</label>
+          <input id="popup__form-input-text" type="text" name="text" placeholder="В свободной форме">
+        </p>
+      </fieldset>
+      <button class="popup__form-submit" type="submit">Отправить</button>
+    </form> 
+  </div>
 
 </body>
