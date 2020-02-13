@@ -10,25 +10,29 @@
 <body>
 
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img src="img/nerds-logo.png" alt="Логотип Нёрдс">
-    </a>
     <nav class="navigation-panel">
-      <ul class="navigation-panel__list">
-        <li><a href="index.html">Студия</a></li>
-        <li><a href="">Клиенты</a></li>
-        <li><a>Магазин</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-      <ul>
-        <li><a href="">Корзина</a></li>
-      </ul>
+      <a class="header__logo">
+      <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
+      </a>
+      <div class="navigation-panel__items">
+        <ul>
+          <li><a href="index.html">Студия</a></li>
+          <li><a href="">Клиенты</a></li>
+          <li class="navigation-panel__item-active"><a href="catalog.html">Магазин</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <p><a href="">Корзина</a></p>
+      </div>
     </nav>
   </header>
 
-  <main class="container">
-    <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+  <main>
+    <div class="catalog-title">
+      <h1>Магазин готовых шаблонов</h1>
+    </div>
     
+    <div class="catalog-wrapper">
+
     <section class="sort-panel">
       <h2 class="visually-hidden">Сортировка проектов</h2>
       <div class="sort-panel__slider">
@@ -40,15 +44,15 @@
           <ul>
             <li>
               <input id="sort-panel__input-adaptive" type="radio" name="grid" value="adaptive" checked>
-              <lable for="sort-panel__input-adaptive">Адаптивная</lable>
+              <label for="sort-panel__input-adaptive">Адаптивная</label>
             </li>
             <li>
               <input id="sort-panel__input-fixed" type="radio" name="grid" value="fixed">
-              <lable for="sort-panel__input-fixed">Фиксированная</lable>
+              <label for="sort-panel__input-fixed">Фиксированная</label>
             </li>
             <li>
               <input id="sort-panel__input-rubber" type="radio" name="grid" value="rubber">
-              <lable for="sort-panel__input-rubber">Резиновая</lable>
+              <label for="sort-panel__input-rubber">Резиновая</label>
             </li>
           </ul>  
         </fieldset>
@@ -57,23 +61,23 @@
           <ul>
             <li>
               <input id="sort-panel__input-slider" type="checkbox" name="slider" checked>
-              <lable for="sort-panel__input-slider">Слайдер</lable>
+              <label for="sort-panel__input-slider">Слайдер</label>
             </li>
             <li>
               <input id="sort-panel__input-advantages" type="checkbox" name="advantages">
-              <lable for="sort-panel__input-advantages">Блок преимуществ</lable>
+              <label for="sort-panel__input-advantages">Блок преимуществ</label>
             </li>
             <li>
               <input id="sort-panel__input-news" type="checkbox" name="news" checked>
-              <lable for="sort-panel__input-news">Новости</lable>
+              <label for="sort-panel__input-news">Новости</label>
             </li>
             <li>
               <input id="sort-panel__input-gallery" type="checkbox" name="gallery">
-              <lable for="sort-panel__input-gallery">Галерея</lable>
+              <label for="sort-panel__input-gallery">Галерея</label>
             </li>
             <li>
               <input id="sort-panel__input-cart" type="checkbox" name="cart">
-              <lable for="sort-panel__input-cart">Корзина</lable>
+              <label for="sort-panel__input-cart">Корзина</label>
             </li>
           </ul>
         </fieldset>
@@ -106,57 +110,59 @@
         <li><span>Следующая</span></li>
       </ul>
     </section>
+
+  </div>
   
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <img src="img/map.jpg" width="1440" height="416" alt="Карта">
-      <img src="img/map-marker.png" width="231" height="190" alt="Маркер местоположения">
-      <div class="address">
-        <p>
-          <span>Nёrds design studio</span><br>
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
-          <span>тел. +7 (812) 275-75-75</span>
-        </p>
-        <input type="button" value="Напишите нам">   
+      <div class="map-wrapper">
+        <img src="img/map.jpg" width="1440" height="416" alt="Карта">
+        <img class="contacts__marker" src="img/map-marker.png" width="231" height="190" alt="Маркер местоположения">
+        <div class="address">  
+          <h3>Nёrds design studio</h3>
+          <p>
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="address__form-btn" href="">Напишите нам</a>  
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="social">
-      <ul class="social__list">
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
-      <div class="social__text">
-        <b>
-          Давайте дружить, это выгодно!<br>
-          Скидка 10% для друзей из социальных сетей.
-        </b>
-      </div>
+  <footer class="social">
+    <ul class="social__list">
+      <li class="social__list-item social__list-vk"><a href="">VK</a></li>
+      <li class="social__list-item social__list-facebook"><a href="">Facebook</a></li>
+      <li class="social__list-item social__list-instagram"><a href="">Instagram</a></li>
+    </ul>
+    <div class="social__text">  
+      <b>Давайте дружить, это выгодно!</b><br>
+      <p>Скидка 10% для друзей из социальных сетей.</p> 
     </div>
   </footer>
 
-  <div class="popup">
-    <h3>Напишите нам</h3>
+  <div class="popup visually-hidden">   
     <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
+        <h3>Напишите нам</h3>
+        <div class="popup__form-item-wrapper">
+          <p class="popup__form-item">
+            <label for="popup__form-input-name">Ваше имя:</label><br>
+            <input id="popup__form-input-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="popup__form-item">
+            <label for="popup__form-input-email">Ваш e-mail:</label><br>
+            <input id="popup__form-input-email" type="text" name="email" placeholder="email@example.com">
+          </p>
+        </div>
         <p class="popup__form-item">
-          <label for="popup__form-input-name">Ваше имя:</label>
-          <input id="popup__form-input-name" type="text" name="name" placeholder="Имя Фамилия">
+          <label for="popup__form-input-text">Такст письма:</label><br>
+          <textarea id="popup__form-input-text" name="text" placeholder="В свободной форме"></textarea>
         </p>
-        <p class="popup__form-item">
-          <label for="popup__form-input-email">Ваш e-mail:</label>
-          <input id="popup__form-input-email" type="text" name="email" placeholder="email@example.com">
-        </p>
-        <p class="popup__form-item">
-          <label for="popup__form-input-text">Такст письма</label>
-          <input id="popup__form-input-text" type="text" name="text" placeholder="В свободной форме">
-        </p>
+        <button class="popup__form-submit-btn" type="submit">Отправить</button>
       </fieldset>
-      <button class="popup__form-submit" type="submit">Отправить</button>
     </form> 
   </div>
 
