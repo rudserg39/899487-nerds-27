@@ -40,44 +40,91 @@
       </div>
       <form class="sort-panel__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
+          <div class="sort-panel__price-scale">
+            <div class="sort-panel__price-scale-line">
+              <div class="sort-panel__price-scale-gap"></div>
+            </div>
+            <div class="sort-panel__price-scale-mark sort-panel__price-scale-mark-start">
+              <div class="sort-panel__price-scale-dot"></div>
+            </div>
+            <div class="sort-panel__price-scale-mark sort-panel__price-scale-mark-end">
+              <div class="sort-panel__price-scale-dot"></div>
+            </div>     
+          </div>
+          <div class="sort-panel__price-value">
+            <div class="sort-panel__price-value-min">
+              <label class="sort-panel__price-value-label" for="price-min">От</label>
+              <input id="price-min" type="text" name="price-min" value="0" checked>
+            </div>
+            <div class="sort-panel__price-value-max">
+              <label class="sort-panel__price-value-label" for="price-max">До</label>
+              <input id="price-max" type="text" name="price-max" value="15000" checked>
+            </div> 
+          </div>
+        </fieldset>
+        <fieldset>
           <legend>Сетка:</legend>
-          <ul>
+          <ul class="sort-panel__grid-options">
             <li>
               <input id="sort-panel__input-adaptive" type="radio" name="grid" value="adaptive" checked>
-              <label for="sort-panel__input-adaptive">Адаптивная</label>
+              <label for="sort-panel__input-adaptive">
+                <span class="sort-panel__radio"></span>
+                Адаптивная
+              </label>
             </li>
             <li>
               <input id="sort-panel__input-fixed" type="radio" name="grid" value="fixed">
-              <label for="sort-panel__input-fixed">Фиксированная</label>
+              <label for="sort-panel__input-fixed">
+                <span class="sort-panel__radio"></span>
+                Фиксированная
+              </label>
             </li>
             <li>
               <input id="sort-panel__input-rubber" type="radio" name="grid" value="rubber">
-              <label for="sort-panel__input-rubber">Резиновая</label>
+              <label for="sort-panel__input-rubber">
+                <span class="sort-panel__radio"></span>
+                Резиновая
+              </label>
             </li>
           </ul>  
         </fieldset>
         <fieldset>
           <legend>Особенности:</legend>
-          <ul>
+          <ul class="sort-panel__features-options">
             <li>
               <input id="sort-panel__input-slider" type="checkbox" name="slider" checked>
-              <label for="sort-panel__input-slider">Слайдер</label>
+              <label  for="sort-panel__input-slider">
+                <span class="sort-panel__checkbox"></span>
+                Слайдер
+              </label>
             </li>
             <li>
               <input id="sort-panel__input-advantages" type="checkbox" name="advantages">
-              <label for="sort-panel__input-advantages">Блок преимуществ</label>
+              <label for="sort-panel__input-advantages">
+                <span class="sort-panel__checkbox"></span>
+                Блок преимуществ
+              </label>
             </li>
             <li>
               <input id="sort-panel__input-news" type="checkbox" name="news" checked>
-              <label for="sort-panel__input-news">Новости</label>
+              <label for="sort-panel__input-news">
+                <span class="sort-panel__checkbox"></span>
+                Новости
+              </label>
             </li>
             <li>
               <input id="sort-panel__input-gallery" type="checkbox" name="gallery">
-              <label for="sort-panel__input-gallery">Галерея</label>
+              <label for="sort-panel__input-gallery">
+                <span class="sort-panel__checkbox"></span>
+                Галерея
+              </label>
             </li>
             <li>
               <input id="sort-panel__input-cart" type="checkbox" name="cart">
-              <label for="sort-panel__input-cart">Корзина</label>
+              <label for="sort-panel__input-cart">
+                <span class="sort-panel__checkbox"></span>
+                Корзина
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -89,28 +136,87 @@
       <h2 class="visually-hidden">Образцы проектов</h2>
       <div class="sample__priority-panel">
         <span>Сортировать:</span>
-        <ul>
-          <li><span>По цене</span></li>
-          <li><span>По типу</span></li>
-          <li><span>По названию</span></li>
-        </ul>
+        <div class="sample__priority-panel-items">
+          <ul>
+            <li class="sample__priority-panel-item sample__priority-panel-item-active"><span>По цене</span></li>
+            <li class="sample__priority-panel-item"><span>По типу</span></li>
+            <li class="sample__priority-panel-item"><span>По названию</span></li>
+          </ul>
+          <div class="sample__priority-panel-icons">
+            <div class="sample__priority-panel-icon sample__priority-panel-icon-up"></div>
+            <div class="sample__priority-panel-icon sample__priority-panel-icon-down"></div>
+          </div>
+        </div>
       </div>
       <ul class="sample__pages">
-        <li><img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Макет Седона"></li>
-        <li><img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Макет Пинк"></li>
-        <li><img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Макет Барбершоп"></li>
-        <li><img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Макет Мишка"></li>
-        <li><img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Макет Аплюс"></li>
-        <li><img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Макет Квас"></li>
+        <li>
+          <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Макет Седона">
+          <div class="sample__pages-card">
+            <div class="sample__pages-card-content">
+              <h3>Sedona</h3>
+              <p>Информационный сайт<br> для туристов</p>
+              <a href="#">9 990 Руб.</a>
+            </div>
+          </div> 
+        </li>
+        <li>
+          <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Макет Пинк">
+          <div class="sample__pages-card">
+            <div class="sample__pages-card-content">
+              <h3>Pink App</h3>
+              <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+              <a href="#">9 990 Руб.</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Макет Барбершоп">
+          <div class="sample__pages-card">
+            <div class="sample__pages-card-content">
+              <h3>Barbershop</h3>
+              <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+              <a href="#">9 990 Руб.</a>
+            </div>
+          </div>   
+        </li>
+        <li>
+          <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Макет Мишка">
+          <div class="sample__pages-card">
+            <div class="sample__pages-card-content">
+              <h3>MISHKA</h3>
+              <p>Интернет-магазин<br> вязаных игрушек</p>
+              <a href="#">9 990 Руб.</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Макет Аплюс">
+          <div class="sample__pages-card">
+            <div class="sample__pages-card-content">
+              <h3>A Plus</h3>
+              <p>Лендинг курсов повышения<br> квалификации</p>
+              <a href="#">9 990 Руб.</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Макет Квас">
+          <div class="sample__pages-card">
+            <div class="sample__pages-card-content">
+              <h3>КВАСТ</h3>
+              <p>Промо-сайт производителя<br> крафтового кваса</p>
+              <a href="#">9 990 Руб.</a>
+            </div>
+          </div>
+        </li>
       </ul>
       <ul class="sample__navigation-panel">
-        <li><span>1</span></li>
+        <li class="sample__navigation-panel-item-active"><span>1</span></li>
         <li><span>2</span></li>
         <li><span>3</span></li>
         <li><span>Следующая</span></li>
       </ul>
     </section>
-
   </div>
   
     <section class="contacts">
@@ -163,6 +269,7 @@
         </p>
         <button class="popup__form-submit-btn" type="submit">Отправить</button>
       </fieldset>
+      <img class="popup__form-close-cross" src="../899487-nerds-27/img/close-cross.svg" ale="Кнопка закрытия попапа">
     </form> 
   </div>
 
