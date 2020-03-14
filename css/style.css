@@ -687,7 +687,7 @@ a {
 .logos {
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 82px;
+  margin-bottom: 79px;
 }
 
 .logos__list {
@@ -733,6 +733,8 @@ a {
 }
 
 .contacts__map {
+  width: 100%;
+  min-width: 1200px;
   border: none;
 }
 
