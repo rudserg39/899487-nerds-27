@@ -13,12 +13,12 @@
 
   <header class="header">
     <nav class="navigation-panel">
-      <a class="navigation-panel__logo" href="index.html">
+      <div class="navigation-panel__logo" aria-label="Логотип Нёрдс" tabindex="0">
         <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
-      </a>
+      </div>
       <div class="navigation-panel__items">
         <ul>
-          <li class="navigation-panel__item-active"><a>Студия</a></li>
+          <li class="navigation-panel__item-active"><a href="">Студия</a></li>
           <li><a href="">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="">Контакты</a></li>
@@ -37,25 +37,30 @@
         <input id="slider__input-3" class="slider__input-3" type="radio" name="toggle">
 
         <div class="slider__controls">
-          <label class="slider__controls-label-1" for="slider__input-1"></label>
-          <label class="slider__controls-label-2" for="slider__input-2"></label>
-          <label class="slider__controls-label-3" for="slider__input-3"></label>
+          <label class="slider__controls-label-1" for="slider__input-1">Первый слайд</label>
+          <label class="slider__controls-label-2" for="slider__input-2">Второй слайд</label>
+          <label class="slider__controls-label-3" for="slider__input-3">Третий слайд</label>
         </div>
 
         <div class="slider-inner">
           <div class="slider__slides">
             <div class="slider__item">
-              <p>Долго, дорого,<br> скрупулезно.</p>
-              <p>Математически выверенный дизайн<br> для вашего сайта или мобильногоприложения.</p>
+              <div class="slider__item-description">
+                <p>Долго, дорого,<br> скрупулезно.</p>
+                <p>Математически выверенный дизайн<br> для вашего сайта или мобильногоприложения.</p>
+              </div>
             </div>
             <div class="slider__item">
-              <p>Любим математику<br> как никто другой</p>
-              <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+              <div class="slider__item-description">
+                <p>Любим математику<br> как никто другой</p>
+                <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+              </div>
             </div>
             <div class="slider__item">
-              <p>Только ночь,<br> только хардкор</p>
-              <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.
-              </p>
+              <div class="slider__item-description">
+                <p>Только ночь,<br> только хардкор</p>
+                <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+              </div>
             </div>
           </div>
           <a class="slider__item-btn" href="">Узнать больше</a>
@@ -66,19 +71,25 @@
     <section class="order">
       <h2 class="visually-hidden">Список предложений</h2>
       <div class="order__item">
-        <img src="img/advantage-picture-red.jpg" width="300" height="146" alt="Изображение ноутбука">
+        <div class="order__item-img">
+          <img src="img/advantage-picture-red.jpg" width="300" height="146" alt="Изображение ноутбука">
+        </div>
         <h3>Веб-сайты</h3>
         <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
         <a class="order__item-btn order__item-btn_red" href="">Заказать</a>
       </div>
       <div class="order__item">
-        <img src="img/advantage-picture-green.jpg" width="300" height="146" alt="Изображение смартфона">
+        <div class="order__item-img">
+          <img src="img/advantage-picture-green.jpg" width="300" height="146" alt="Изображение смартфона">
+        </div>
         <h3>Приложения</h3>
         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
         <a class="order__item-btn order__item-btn_green" href="">Заказать</a>
       </div>
       <div class="order__item">
-        <img src="img/advantage-picture-yellow.jpg" width="300" height="146" alt="Изображение презентации">
+        <div class="order__item-img">
+          <img src="img/advantage-picture-yellow.jpg" width="300" height="146" alt="Изображение презентации">
+        </div>
         <h3>Презентации</h3>
         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
         <a class="order__item-btn order__item-btn_yellow" href="">Заказать</a>
@@ -99,15 +110,17 @@
         </ul>
       </div>
       <div class="offer__features">
-        <img src="img/nerds-picture.png" width="360" height="208" alt="Логотип Нёрдс">
+        <div class="offer__features-img">
+          <img src="img/nerds-picture.png" width="360" height="208" alt="Логотип Нёрдс">
+        </div>
         <table class="offer__features-table">
           <caption>С 2004 года любим точность во всем:</caption>
-          <tr>
+          <tr class="offer__features-table-row">
             <td>146<sup>%</sup></td>
             <td>100<sup>%</sup></td>
             <td>50<sup>%</sup></td>
           </tr>
-          <tr>
+          <tr class="offer__features-table-row">
             <td>Уровень самоотдачи</td>
             <td>Соблюдение сроков</td>
             <td>Минимальная предоплата</td>
@@ -120,18 +133,30 @@
       <h2 class="visually-hidden">Логотипы реализованных проектов</h2>
       <ul class="logos__list">
         <li class="logos__list-item">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/htmlacademy-logo.png" width="199" height="68" alt="Логотип html-academy">
-          </a>
+          <div class="logos__list-item-html-academy">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип html academy">
+              <img src="img/htmlacademy-logo.png" width="199" height="68" alt="Логотип html-academy">
+            </a>
+            <span class="logos__list-item-line"></span>
+          </div>
         </li>
         <li class="logos__list-item">
-          <a href=""><img src="img/borodinski-logo.png" width="209" height="90" alt="Логотип barbershop-borodinski"></a>
+          <div class="logos__list-item-borodinski">
+            <a href="" aria-label="Логотип barbershop-borodinski"><img src="img/borodinski-logo.png" width="209" height="90" alt="Логотип barbershop-borodinski"></a>
+            <span class="logos__list-item-line"></span>
+          </div>
         </li>
         <li class="logos__list-item">
-          <a href=""><img src="img/pink-logo.png" width="185" height="52" alt="Логотип pink"></a>
+          <div class="logos__list-item-pink">
+            <a href="" aria-label="Логотип pink"><img src="img/pink-logo.png" width="185" height="52" alt="Логотип pink"></a>
+            <span class="logos__list-item-line"></span>
+          </div>
         </li>
         <li class="logos__list-item">
-          <a href=""><img src="img/mishka-logo.png" width="173" height="84" alt="Логотип mishka"></a>
+          <div class="logos__list-item-mishka">
+            <a href="" aria-label="Логотип mishka"><img src="img/mishka-logo.png" width="173" height="84" alt="Логотип mishka"></a>
+            <span class="logos__list-item-line"></span>
+          </div>
         </li>
       </ul>
     </section>
@@ -145,16 +170,16 @@
           191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
         <a class="contacts__address-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <a class="contacts__address-form-btn" href="">Напишите нам</a>
+        <a class="contacts__address-form-btn" href="feedback.html">Напишите нам</a>
       </div>
     </section>
   </main>
 
   <footer class="social">
     <ul class="social__list">
-      <li class="social__list-item social__list-vk"><a href="">VK</a></li>
-      <li class="social__list-item social__list-facebook"><a href="">Facebook</a></li>
-      <li class="social__list-item social__list-instagram"><a href="">Instagram</a></li>
+      <li><a class="social__list-item social__list-vk" href="">VK</a></li>
+      <li><a class="social__list-item social__list-facebook" href="">Facebook</a></li>
+      <li><a class="social__list-item social__list-instagram" href="">Instagram</a></li>
     </ul>
     <div class="social__text">
       <b>Давайте дружить, это выгодно!</b>
@@ -169,13 +194,11 @@
         <div class="popup__form-wrapper">
           <p class="popup__form-item">
             <label for="popup__form-input-name">Ваше имя:</label>
-            <input id="popup__form-input-name" class="popup__form-input" type="text" name="name"
-              placeholder="Имя Фамилия" required>
+            <input id="popup__form-input-name" class="popup__form-input" type="text" name="name" placeholder="Имя Фамилия" required>
           </p>
           <p class="popup__form-item">
             <label for="popup__form-input-email">Ваш e-mail:</label>
-            <input id="popup__form-input-email" class="popup__form-input" type="text" name="email"
-              placeholder="email@example.com" required>
+            <input id="popup__form-input-email" class="popup__form-input" type="text" name="email" placeholder="email@example.com" required>
           </p>
         </div>
         <p class="popup__form-item">
@@ -184,7 +207,7 @@
         </p>
         <button class="popup__form-submit-btn" type="submit">Отправить</button>
       </fieldset>
-      <div class="popup__form-close-cross"></div>
+      <div class="popup__form-close-cross" tabindex="0"></div>
     </form>
   </div>
 

@@ -1,13 +1,15 @@
-'use strict';
+
 
 var popup = document.querySelector('.popup');
 var popupForm = popup.querySelector('.popup__form');
 
 var openBtn = document.querySelector('.contacts__address-form-btn');
 var closeBtn = popup.querySelector('.popup__form-close-cross');
+var submitButton = popup.querySelector('.popup__form-submit-btn');
 
 var nameInput = popup.querySelector('#popup__form-input-name');
 var emailInput = popup.querySelector('#popup__form-input-email');
+var textArea = popup.querySelector('#popup__form-input-text');
 
 
 // Открытие и закрытие попапа
@@ -32,6 +34,12 @@ openBtn.addEventListener('click', function (evt) {
 
 closeBtn.addEventListener('click', closeBtnClickHandler);
 
+closeBtn.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 13) {
+    closeBtnClickHandler();
+  }
+});
+
 document.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     closeBtnClickHandler();
@@ -45,14 +53,23 @@ function checkEmail () {
   if (emailInput.value !== '' && emailInput.value.match(/@/) === null) {
     emailInput.setCustomValidity('Email должен содержать @');
     emailInput.classList.add('popup__form-input_error');
-    popup.classList.add('popup__form-input_error-shake');
   } else {
     emailInput.setCustomValidity('');
     emailInput.classList.remove('popup__form-input_error');
   }
-}
+};
+
+function checkInputLength () {
+  checkEmail();
+  if (emailInput.value === '' || nameInput.value.lengt === '' || textArea.value === '') {
+    popup.classList.remove('popup__form-input_error-shake');
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add('popup__form-input_error-shake');
+  }
+};
 
 emailInput.addEventListener('blur', function () {
-  checkEmail();
   emailInput.addEventListener('input', checkEmail);
 });
+
+submitButton.addEventListener('click', checkInputLength);

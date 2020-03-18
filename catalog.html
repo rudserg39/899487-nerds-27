@@ -13,7 +13,7 @@
 
   <header class="header">
     <nav class="navigation-panel">
-      <a class="navigation-panel__logo" href="index.html">
+      <a class="navigation-panel__logo" href="index.html" aria-label="Логотип Нёрдс" tabindex="0">
         <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
       </a>
       <div class="navigation-panel__items">
@@ -45,10 +45,10 @@
               <div class="sort-panel__price-scale-line">
                 <div class="sort-panel__price-scale-gap"></div>
               </div>
-              <div class="sort-panel__price-scale-mark sort-panel__price-scale-mark-start">
+              <div class="sort-panel__price-scale-mark sort-panel__price-scale-mark-start" tabindex="0">
                 <div class="sort-panel__price-scale-dot"></div>
               </div>
-              <div class="sort-panel__price-scale-mark sort-panel__price-scale-mark-end">
+              <div class="sort-panel__price-scale-mark sort-panel__price-scale-mark-end" tabindex="0">
                 <div class="sort-panel__price-scale-dot"></div>
               </div>
             </div>
@@ -67,22 +67,22 @@
             <legend>Сетка:</legend>
             <ul class="sort-panel__grid-options">
               <li>
-                <input id="sort-panel__input-adaptive" class="sort-panel__input" type="radio" name="grid" value="adaptive" checked>
-                <label for="sort-panel__input-adaptive" class="sort-panel__input-label">
+                <label class="sort-panel__input-label">
+                  <input class="sort-panel__input" type="radio" name="grid" value="adaptive" checked>
                   <span class="sort-panel__radio"></span>
                   Адаптивная
                 </label>
               </li>
               <li>
-                <input id="sort-panel__input-fixed" class="sort-panel__input" type="radio" name="grid" value="fixed">
-                <label for="sort-panel__input-fixed" class="sort-panel__input-label">
+                <label class="sort-panel__input-label">
+                  <input class="sort-panel__input" type="radio" name="grid" value="fixed">
                   <span class="sort-panel__radio"></span>
                   Фиксированная
                 </label>
               </li>
               <li>
-                <input id="sort-panel__input-rubber" class="sort-panel__input" type="radio" name="grid" value="rubber" disabled>
-                <label for="sort-panel__input-rubber" class="sort-panel__input-label">
+                <label class="sort-panel__input-label">
+                  <input class="sort-panel__input" type="radio" name="grid" value="rubber" disabled>
                   <span class="sort-panel__radio"></span>
                   Резиновая
                 </label>
@@ -93,36 +93,36 @@
             <legend>Особенности:</legend>
             <ul class="sort-panel__features-options">
               <li>
-                <input id="sort-panel__input-slider" class="sort-panel__input" type="checkbox" name="slider" checked >
-                <label for="sort-panel__input-slider" class="sort-panel__input-label">
+                <label class="sort-panel__input-label">
+                  <input class="sort-panel__input" type="checkbox" name="slider" checked>
                   <span class="sort-panel__checkbox"></span>
                   Слайдер
                 </label>
               </li>
               <li>
-                <input id="sort-panel__input-advantages" class="sort-panel__input" type="checkbox" name="advantages">
-                <label for="sort-panel__input-advantages" class="sort-panel__input-label">
+                <label class="sort-panel__input-label">
+                  <input class="sort-panel__input" type="checkbox" name="advantages">
                   <span class="sort-panel__checkbox"></span>
                   Блок преимуществ
                 </label>
               </li>
               <li>
-                <input id="sort-panel__input-news" class="sort-panel__input" type="checkbox" name="news" checked>
-                <label for="sort-panel__input-news" class="sort-panel__input-label">
+                <label class="sort-panel__input-label">
+                  <input class="sort-panel__input" type="checkbox" name="news" checked>
                   <span class="sort-panel__checkbox"></span>
                   Новости
                 </label>
               </li>
               <li>
-                <input id="sort-panel__input-gallery" class="sort-panel__input" type="checkbox" name="gallery">
-                <label for="sort-panel__input-gallery" class="sort-panel__input-label">
+                <label class="sort-panel__input-label">
+                  <input class="sort-panel__input" type="checkbox" name="gallery">
                   <span class="sort-panel__checkbox"></span>
                   Галерея
                 </label>
               </li>
               <li>
-                <input id="sort-panel__input-cart" class="sort-panel__input" type="checkbox" name="cart" disabled>
-                <label for="sort-panel__input-cart" class="sort-panel__input-label">
+                <label class="sort-panel__input-label">
+                  <input class="sort-panel__input" type="checkbox" name="cart" disabled>
                   <span class="sort-panel__checkbox"></span>
                   Корзина
                 </label>
@@ -135,82 +135,106 @@
 
       <section class="sample">
         <h2 class="visually-hidden">Образцы проектов</h2>
-        <div class="sample__priority-panel">
+        <div class="sample__priority-panel" aria-label="Панель сортировки образцов сайтов">
           <span>Сортировать:</span>
           <div class="sample__priority-panel-items">
             <ul>
-              <li class="sample__priority-panel-item sample__priority-panel-item-active"><span>По цене</span></li>
-              <li class="sample__priority-panel-item"><span>По типу</span></li>
-              <li class="sample__priority-panel-item"><span>По названию</span></li>
+              <li class="sample__priority-panel-item sample__priority-panel-item-active" "><a href="" aria-label="Сортировка по цене" tabindex="0">По цене</a></li>
+              <li class="sample__priority-panel-item"><a href="" aria-label="Сортировка по типу" tabindex="0">По типу</a></li>
+              <li class="sample__priority-panel-item"><a href="" aria-label="Сортировка по названию" tabindex="0">По названию</a></li>
             </ul>
-            <div class="sample__priority-panel-icons">
-              <div class="sample__priority-panel-icon sample__priority-panel-icon-up"></div>
-              <div class="sample__priority-panel-icon sample__priority-panel-icon-down"></div>
+            <div class="sample__priority-panel-icons" aria-label="Кнопки сортировки образцов сайтов">
+              <div class="sample__priority-panel-icon sample__priority-panel-icon-up" aria-label="Кнопка отображения сортировки с конца" tabindex="0"></div>
+              <div class="sample__priority-panel-icon sample__priority-panel-icon-down" aria-label="Кнопка отображения сортировки с начала" tabindex="0"></div>
             </div>
           </div>
         </div>
         <ul class="sample__pages">
           <li class="sample__pages-item">
-            <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Макет Седона">
+            <div class="sample__pages-item-img">
+              <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Макет Седона">
+            </div>
             <div class="sample__pages-card">
               <h3><a class="sample__pages-card-title" href="">Sedona</a></h3>
-              <p>Информационный сайт для туристов</p>
+              <div class="sample__pages-card-description">
+                <p>Информационный сайт для туристов</p>
+              </div>
               <a class="sample__pages-card-content-btn" href="#">9 990 Руб.</a>
             </div>
           </li>
           <li class="sample__pages-item">
-            <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Макет Пинк">
+            <div class="sample__pages-item-img">
+              <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Макет Пинк">
+            </div>
             <div class="sample__pages-card">
               <h3><a class="sample__pages-card-title" href="">Pink App</a></h3>
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <div class="sample__pages-card-description">
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+              </div>
               <a class="sample__pages-card-content-btn" href="#">9 990 Руб.</a>
             </div>
           </li>
           <li class="sample__pages-item">
-            <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Макет Барбершоп">
+            <div class="sample__pages-item-img">
+              <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Макет Барбершоп">
+            </div>
             <div class="sample__pages-card">
               <h3><a class="sample__pages-card-title" href="">Barbershop</a></h3>
-              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <div class="sample__pages-card-description">
+                <p>Сайт салона красоты. Для мужчин, да.</p>
+              </div>
               <a class="sample__pages-card-content-btn" href="#">9 990 Руб.</a>
             </div>
           </li>
           <li class="sample__pages-item">
-            <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Макет Мишка">
+            <div class="sample__pages-item-img">
+              <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Макет Мишка">
+            </div>
             <div class="sample__pages-card">
               <h3><a class="sample__pages-card-title" href="">MISHKA</a></h3>
-              <p>Интернет-магазин вязаных игрушек</p>
+              <div class="sample__pages-card-description">
+                <p>Интернет-магазин вязаных игрушек</p>
+              </div>
               <a class="sample__pages-card-content-btn" href="#">9 990 Руб.</a>
             </div>
           </li>
           <li class="sample__pages-item">
-            <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Макет Аплюс">
+            <div class="sample__pages-item-img">
+              <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Макет Аплюс">
+            </div>
             <div class="sample__pages-card">
               <h3><a class="sample__pages-card-title" href="">A Plus</a></h3>
-              <p>Лендинг курсов повышения квалификации</p>
+              <div class="sample__pages-card-description">
+                <p>Лендинг курсов повышения квалификации</p>
+              </div>
               <a class="sample__pages-card-content-btn" href="#">9 990 Руб.</a>
             </div>
           </li>
           <li class="sample__pages-item">
-            <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Макет Квас">
+            <div class="sample__pages-item-img">
+              <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Макет Квас">
+            </div>
             <div class="sample__pages-card">
               <h3><a class="sample__pages-card-title" href="">КВАСТ</a></h3>
-              <p>Промо-сайт производителя крафтового кваса</p>
+              <div class="sample__pages-card-description">
+                <p>Промо-сайт производителя крафтового кваса</p>
+              </div>
               <a class="sample__pages-card-content-btn" href="#">9 990 Руб.</a>
             </div>
           </li>
         </ul>
         <ul class="sample__navigation-panel">
-          <li class="sample__navigation-panel-item-active"><span>1</span></li>
-          <li><span>2</span></li>
-          <li><span>3</span></li>
-          <li><span>Следующая</span></li>
+          <li class="sample__navigation-panel-item sample__navigation-panel-item_active"><a href="">1</a></li>
+          <li class="sample__navigation-panel-item"><a href="">2</a></li>
+          <li class="sample__navigation-panel-item"><a href="">3</a></li>
+          <li class="sample__navigation-panel-item"><a href="">Следующая</a></li>
         </ul>
       </section>
     </div>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A39fcef90e4587c4768bdaefe0265c822447511663541552fceafedd6e20c2fba&amp;source=constructor" width="1440" height="416"></iframe>
+      <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A39fcef90e4587c4768bdaefe0265c822447511663541552fceafedd6e20c2fba&amp;source=constructor" width="1440" height="416"></iframe>
       <div class="contacts__address">
         <h3>Nёrds design studio</h3>
         <p>
@@ -218,16 +242,16 @@
           ул. Б. Конюшенная, д. 19/8
         </p>
         <a class="contacts__address-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <a class="contacts__address-form-btn" href="">Напишите нам</a>
+        <a class="contacts__address-form-btn" href="feedback.html">Напишите нам</a>
       </div>
     </section>
   </main>
 
   <footer class="social">
     <ul class="social__list">
-      <li class="social__list-item social__list-vk"><a href="">VK</a></li>
-      <li class="social__list-item social__list-facebook"><a href="">Facebook</a></li>
-      <li class="social__list-item social__list-instagram"><a href="">Instagram</a></li>
+      <li><a class="social__list-item social__list-vk" href="">VK</a></li>
+      <li><a class="social__list-item social__list-facebook" href="">Facebook</a></li>
+      <li><a class="social__list-item social__list-instagram" href="">Instagram</a></li>
     </ul>
     <div class="social__text">
       <b>Давайте дружить, это выгодно!</b>
@@ -242,23 +266,20 @@
         <div class="popup__form-wrapper">
           <p class="popup__form-item">
             <label for="popup__form-input-name">Ваше имя:</label>
-            <input id="popup__form-input-name" class="popup__form-input" type="text" name="name"
-              placeholder="Имя Фамилия" required>
+            <input id="popup__form-input-name" class="popup__form-input" type="text" name="name" placeholder="Имя Фамилия" required>
           </p>
           <p class="popup__form-item">
             <label for="popup__form-input-email">Ваш e-mail:</label>
-            <input id="popup__form-input-email" class="popup__form-input" type="text" name="email"
-              placeholder="email@example.com" required>
+            <input id="popup__form-input-email" class="popup__form-input" type="text" name="email" placeholder="email@example.com" required>
           </p>
         </div>
         <p class="popup__form-item">
           <label for="popup__form-input-text">Текст письма:</label>
-          <textarea id="popup__form-input-text" class="popup__form-textarea popup__form-input" name="text"
-            placeholder="В свободной форме" required></textarea>
+          <textarea id="popup__form-input-text" class="popup__form-textarea popup__form-input" name="text" placeholder="В свободной форме" required></textarea>
         </p>
         <button class="popup__form-submit-btn" type="submit">Отправить</button>
       </fieldset>
-      <div class="popup__form-close-cross"></div>
+      <div class="popup__form-close-cross" tabindex="0"></div>
     </form>
   </div>
 
