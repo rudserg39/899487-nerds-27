@@ -13,7 +13,7 @@
 
   <header class="header">
     <nav class="navigation-panel">
-      <a class="navigation-panel__logo" href="index.html" aria-label="Логотип Нёрдс" tabindex="0">
+      <a class="navigation-panel__logo" href="index.html" aria-label="Переход на главную страницу" tabindex="0">
         <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
       </a>
       <div class="navigation-panel__items">
@@ -45,10 +45,10 @@
               <div class="sort-panel__price-scale-line">
                 <div class="sort-panel__price-scale-gap"></div>
               </div>
-              <div class="sort-panel__price-scale-mark sort-panel__price-scale-mark-start" tabindex="0">
+              <div class="sort-panel__price-scale-mark sort-panel__price-scale-mark-start" tabindex="0" aria-label="Установить нижнюю границу стоимости сайта">
                 <div class="sort-panel__price-scale-dot"></div>
               </div>
-              <div class="sort-panel__price-scale-mark sort-panel__price-scale-mark-end" tabindex="0">
+              <div class="sort-panel__price-scale-mark sort-panel__price-scale-mark-end" tabindex="0" aria-label="Установить верхнюю границу стоимости сайта">
                 <div class="sort-panel__price-scale-dot"></div>
               </div>
             </div>
@@ -135,17 +135,17 @@
 
       <section class="sample">
         <h2 class="visually-hidden">Образцы проектов</h2>
-        <div class="sample__priority-panel" aria-label="Панель сортировки образцов сайтов">
+        <div class="sample__priority-panel">
           <span>Сортировать:</span>
           <div class="sample__priority-panel-items">
             <ul>
-              <li class="sample__priority-panel-item sample__priority-panel-item-active"><a href="" aria-label="Сортировка по цене" tabindex="0">По цене</a></li>
-              <li class="sample__priority-panel-item"><a href="" aria-label="Сортировка по типу" tabindex="0">По типу</a></li>
-              <li class="sample__priority-panel-item"><a href="" aria-label="Сортировка по названию" tabindex="0">По названию</a></li>
+              <li class="sample__priority-panel-item sample__priority-panel-item-active"><a href="" aria-label="Сортировать образцы сайтов по цене" tabindex="0">По цене</a></li>
+              <li class="sample__priority-panel-item"><a href="" aria-label="Сортировать образцы сайтов по типу" tabindex="0">По типу</a></li>
+              <li class="sample__priority-panel-item"><a href="" aria-label="Сортировать образцы сайтов по названию" tabindex="0">По названию</a></li>
             </ul>
-            <div class="sample__priority-panel-icons" aria-label="Кнопки сортировки образцов сайтов">
-              <div class="sample__priority-panel-icon sample__priority-panel-icon-up" aria-label="Кнопка отображения сортировки с конца" tabindex="0"></div>
-              <div class="sample__priority-panel-icon sample__priority-panel-icon-down" aria-label="Кнопка отображения сортировки с начала" tabindex="0"></div>
+            <div class="sample__priority-panel-icons">
+              <div class="sample__priority-panel-icon sample__priority-panel-icon-up" aria-label="Сортировать образцы сайтов с конца списка" tabindex="0"></div>
+              <div class="sample__priority-panel-icon sample__priority-panel-icon-down" aria-label="Сортировать образцы сайтов с начала списка" tabindex="0"></div>
             </div>
           </div>
         </div>
@@ -224,10 +224,10 @@
           </li>
         </ul>
         <ul class="sample__navigation-panel">
-          <li class="sample__navigation-panel-item sample__navigation-panel-item_active"><a href="">1</a></li>
-          <li class="sample__navigation-panel-item"><a href="">2</a></li>
-          <li class="sample__navigation-panel-item"><a href="">3</a></li>
-          <li class="sample__navigation-panel-item"><a href="">Следующая</a></li>
+          <li class="sample__navigation-panel-item sample__navigation-panel-item_active"><a href="" aria-label="Переход на первую страницу образцов сайтов">1</a></li>
+          <li class="sample__navigation-panel-item"><a href="" aria-label="Переход на вторую страницу образцов сайтов">2</a></li>
+          <li class="sample__navigation-panel-item"><a href="" aria-label="Переход на третью страницу образцов сайтов">3</a></li>
+          <li class="sample__navigation-panel-item"><a href="" aria-label="Переход на следующую страницу образцов сайтов">Следующая</a></li>
         </ul>
       </section>
     </div>
@@ -241,7 +241,7 @@
           191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8
         </p>
-        <a class="contacts__address-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        <a class="contacts__address-tel" href="tel:+78122757575" aria-label="Контактный номер телефона">тел. +7 (812) 275-75-75</a>
         <a class="contacts__address-form-btn" href="feedback.html">Напишите нам</a>
       </div>
     </section>
@@ -249,9 +249,9 @@
 
   <footer class="social">
     <ul class="social__list">
-      <li><a class="social__list-item social__list-vk" href="">VK</a></li>
-      <li><a class="social__list-item social__list-facebook" href="">Facebook</a></li>
-      <li><a class="social__list-item social__list-instagram" href="">Instagram</a></li>
+      <li><a class="social__list-item social__list-vk" href="" aria-label="Переход на страницу студии в вконтакте">VK</a></li>
+      <li><a class="social__list-item social__list-facebook" href="" aria-label="Переход на страницу студии в facebook">Facebook</a></li>
+      <li><a class="social__list-item social__list-instagram" href="" aria-label="Переход на страницу студии в instagram">Instagram</a></li>
     </ul>
     <div class="social__text">
       <b>Давайте дружить, это выгодно!</b>
@@ -279,7 +279,7 @@
         </p>
         <button class="popup__form-submit-btn" type="submit">Отправить</button>
       </fieldset>
-      <div class="popup__form-close-cross" tabindex="0"></div>
+      <div class="popup__form-close-cross" tabindex="0" aria-label="Закрыть форму обратной связи"></div>
     </form>
   </div>
 
